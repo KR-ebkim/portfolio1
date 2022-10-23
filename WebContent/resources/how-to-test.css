@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 13px;
+    line-height: 20px;
+    color: #222;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pd{
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+
+/* 초기화 끝! */
+
+#wrap{
+    position: relative;
+    width: 100%;
+}
+
+#container{
+    overflow: hidden;
+}
+
+.pc, .ta{
+    display: none;
+}
+
+section{
+    margin: 0 auto
+}
+
+/* 기본화면 - 모바일 */
+
+    .m1_img img{
+        width: 100%;
+        height: 1100px;
+        object-fit: fill;
+    }
+
+    .m1_text{
+        position: absolute;    
+        left: 20px;
+        top: 20px;
+        color: #fff;
+        font-weight: 300;
+    }
+
+    .m1sub-t1{
+        margin-top: 80px;
+        padding-left: 10px;
+        padding-right: 40px;
+    }
+
+    .m1sub-t2{
+        padding-left: 10px;
+        padding-right: 40px;
+    }
+    
+    .m1t1{
+        position: absolute;
+        left: 50%;
+        margin-left: -120px;
+        font-size: 22px; 
+        line-height: 1em;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+        margin-top: 20px;
+    }
+
+    .m1t2{
+        font-size: 13px;
+    }
+
+    .m1t3{
+        margin: 370px auto 0 auto;
+        padding-left: 30px;
+        padding-right: 55px;
+    }
+
+    .iconlist li{
+        margin-left: -30px;
+    }
+
+    .ui-icon{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ui-blue a{
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-image: url(./img/UIsheet.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: 0px 0px;
+        text-indent: -99999px;
+        margin-right: 50px;
+    }
+
+    .ui-comfort a{
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-image: url(./img/UIsheet.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: 0px -60px;
+        text-indent: -99999px;
+    }
+
+    .ui-nightshift a{
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-image: url(./img/UIsheet.png);
+        background-repeat: no-repeat;
+        background-position: -64px 0px;
+        text-indent: -99999px;
+        margin-right: 50px;
+    }
+
+    .ui-truetone a{
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-image: url(./img/UIsheet.png);
+        background-repeat: no-repeat;
+        background-position: -64px -63px;
+        text-indent: -99999px;
+    }
+
+    .Char-howto img{
+        position: absolute;
+        left: 50%;
+        margin-left: -85px;
+        margin-top: -30px;
+        width: 170px;
+    }
+
+    .m1_text{
+        margin: 0 auto;
+    }
+
+    .m1t3{
+        margin-top: 270px;
+        margin-bottom: 10px;
+    }
+
+    .btn-list ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-list li:first-child{
+        margin-left: -50px;
+        margin-right: 10px;
+    }
+
+    
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .mo{
+        display: none;
+    }
+
+    .ta{
+        display: block;
+    }
+
+    .pc{
+        display: none;
+    }
+
+    .m1_img img{
+        width: 100%;
+        height: 1080px;
+        object-fit: fill;
+    }
+    
+    .iconlist{
+        margin-left: 70px;
+    }
+
+    .iconlist li{
+        margin-right: 50px;
+    }
+
+    .iconlist span{
+        margin-bottom: 10px;
+    }
+    
+    
+    .m1t1{
+        margin-top: 40px;
+    }
+
+    .m1sub-t1{
+        margin-top: 120px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        padding: 0 40px 0 20px;
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+
+    .m1sub-t2{
+        font-size: 18px;
+        line-height: 1.5em;
+        margin-bottom: 50px;
+    }
+
+    .m1_text{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .iconlist{
+        display: flex;
+        justify-content: center;
+    }
+
+    .iconlist li{
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .iconlist span{
+        font-size: 17px;
+    }
+
+    .ui-icon{
+        margin-bottom: 10px;
+    }
+
+    .ui-blue a{
+        margin-right: 20px;
+    }
+
+    .ui-nightshift a{
+        margin-right: 20px;
+    }
+
+    .m1t3{
+        font-size: 15px;
+        line-height: 1.5em;
+        padding: 0 50px;
+    }
+
+}
+@media screen and (min-width: 1100px) {
+
+    .mo{
+        display: none;
+    }
+
+    .ta{
+        display: none;
+    }
+    
+    .pc{
+        display: block;
+    }
+    
+    .m1_img img{
+        width: 100%;
+        height: 1080px;
+        object-fit: fill;
+    }
+
+    .m1t3{
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+
+}
